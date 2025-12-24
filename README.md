@@ -1,44 +1,49 @@
- Lazorkit React Starter & Integration Guide
+#  Lazorkit React Starter & Integration Guide
 
-Bounty Submission for Superteam: Integrate Passkey technology with Lazorkit
+> **Bounty Submission for Superteam: Integrate Passkey technology with Lazorkit**
+>
+>  **Live Demo:** [Click "Preview" in the repo]
 
- Live Demo: [Click "Preview" in the repo]
+This repository serves as a production-ready starter template for developers building next-generation Solana applications using **Lazorkit**. It demonstrates how to onboard users instantly with Passkeys and execute gasless transactions using Smart Wallets.
 
-This repository serves as a production-ready starter template for developers building next-generation Solana applications using Lazorkit. It demonstrates how to onboard users instantly with Passkeys and execute gasless transactions using Smart Wallets.
+> **Note:** This starter is configured in **"Demo Mode"**. It simulates the Lazorkit SDK authentication flow so you can test the UI and UX immediately without needing API keys.
 
-Note: This starter is configured in "Demo Mode". It simulates the Lazorkit SDK authentication flow so you can test the UI and UX immediately without needing API keys.
+##  Features Implemented
 
- Features Implemented
+* **Biometric Authentication:** One-click login using Passkeys (WebAuthn).
+* **Smart Wallet Creation:** Automated counter-factual wallet generation on the Solana Devnet.
+* **Gasless Transactions:** Sponsored USDC/SOL transfers using Lazorkit Paymasters.
 
-Biometric Authentication: One-click login using Passkeys (WebAuthn).
+---
 
-Smart Wallet Creation: Automated counter-factual wallet generation on the Solana Devnet.
+##  Quick-Start Guide
 
-Gasless Transactions: Sponsored USDC/SOL transfers using Lazorkit Paymasters.
+### 1. Installation
 
- Quick-Start Guide
-
-1. Installation
-
+```bash
 # Clone the repo
 git clone [https://github.com/your-username/lazorkit-starter.git](https://github.com/your-username/lazorkit-starter.git)
 cd lazorkit-starter
 
 # Install dependencies
 npm install
+```
 
+### 2. Run the App
 
-2. Run the App
-
+```bash
 npm run dev
+```
 
+---
 
-📚 Integration Tutorials
+##  Integration Tutorials
 
-Tutorial 1: Creating a Passkey-Based Wallet
+### Tutorial 1: Creating a Passkey-Based Wallet
 
 Lazorkit abstracts the complexity of WebAuthn. Here is how to create a "Connect" button that generates a smart wallet bound to a user's FaceID or TouchID.
 
+```tsx
 // 1. Import hooks
 // import { useWallet } from '@lazorkit/wallet';
 
@@ -63,12 +68,13 @@ export const LoginButton = () => {
     </button>
   );
 };
+```
 
-
-Tutorial 2: Triggering a Gasless Transaction
+### Tutorial 2: Triggering a Gasless Transaction
 
 The "Holy Grail" of UX is removing the need for users to hold SOL for fees. Lazorkit handles this via Paymasters.
 
+```tsx
 import { SystemProgram, PublicKey } from '@solana/web3.js';
 // import { useWallet } from '@lazorkit/wallet';
 
@@ -94,16 +100,14 @@ const SendSolana = () => {
 
   return <button onClick={sendFunds}>Send Gasless</button>;
 };
+```
 
+##  Tech Stack
 
-🛠 Tech Stack
+* **Framework:** React (Vite)
+* **Styling:** Tailwind CSS + Lucide React
+* **Solana SDK:** `@solana/web3.js`
 
-Framework: React (Vite)
-
-Styling: Tailwind CSS + Lucide React
-
-Solana SDK: @solana/web3.js
-
-📄 License
+## 📄 License
 
 MIT
