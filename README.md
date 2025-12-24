@@ -4,17 +4,17 @@ Bounty Submission for Superteam: Integrate Passkey technology with Lazorkit
 
  Live Demo: [Click "Preview" in the repo]
 
-This repository serves as a production-ready starter template for developers building next-generation Solana applications using Lazorkit. It demonstrates how to onboard users instantly with Passkeys and execute gasless transactions using Smart Wallets
+This repository serves as a production-ready starter template for developers building next-generation Solana applications using Lazorkit. It demonstrates how to onboard users instantly with Passkeys and execute gasless transactions using Smart Wallets.
 
-Note: This starter is configured in "Demo Mode". It simulates the Lazorkit SDK authentication flow so you can test the UI and UX immediately without needing API keys
+Note: This starter is configured in "Demo Mode". It simulates the Lazorkit SDK authentication flow so you can test the UI and UX immediately without needing API keys.
 
  Features Implemented
 
-Biometric Authentication: One-click login using Passkeys (WebAuthn)
+Biometric Authentication: One-click login using Passkeys (WebAuthn).
 
-Smart Wallet Creation: Automated counter-factual wallet generation on the Solana Devnet
+Smart Wallet Creation: Automated counter-factual wallet generation on the Solana Devnet.
 
-Gasless Transactions: Sponsored USDC/SOL transfers using Lazorkit Paymasters
+Gasless Transactions: Sponsored USDC/SOL transfers using Lazorkit Paymasters.
 
  Quick-Start Guide
 
@@ -33,7 +33,7 @@ npm install
 npm run dev
 
 
- Integration Tutorials
+📚 Integration Tutorials
 
 Tutorial 1: Creating a Passkey-Based Wallet
 
@@ -96,7 +96,7 @@ const SendSolana = () => {
 };
 
 
- Tech Stack
+🛠 Tech Stack
 
 Framework: React (Vite)
 
@@ -104,6 +104,6 @@ Styling: Tailwind CSS + Lucide React
 
 Solana SDK: @solana/web3.js
 
- License
+📄 License
 
 MIT
